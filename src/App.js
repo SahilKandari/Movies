@@ -14,7 +14,7 @@ function App() {
     setShowError(null);
     try {
       const response = await fetch(
-        "https://sahil-e5321-default-rtdb.firebaseio.com/movies.json"
+        "https://movies-react-js-default-rtdb.firebaseio.com/movies.json"
       );
 
       //fetch("https://swapi.dev/api/films/");
@@ -64,7 +64,7 @@ function App() {
 
   async function addMovieHandler(movie) {
     const response = await fetch(
-      "https://sahil-e5321-default-rtdb.firebaseio.com/movies.json",
+      "https://movies-react-js-default-rtdb.firebaseio.com/movies.json",
       {
         method: "POST",
         body: JSON.stringify(movie),
